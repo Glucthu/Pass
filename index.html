@@ -1,6 +1,5 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,8 @@
 </head>
 <body>
     <script src="index.js"></script>
-    <div id="box" onclick="showCoords(event)">Click here!</div>
-    <h1 id="coords"></h1>
+    <label for="length">Length: <input type="number" name="length" id="length" min="1" max="64"> </label>
+    <input type="button" value="Generate password" onclick="RandomPassGen()">
+    <h1 id="pass"></h1>
 </body>
 </html>
