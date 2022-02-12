@@ -7,15 +7,15 @@
     <title>Random pass generator</title>
 </head>
 <body>
-    <main>
+    <main id="main">
         <h1>Random pass generator</h1>
         <br>
         <form>
             <label for="length">Length: </label>
             <input type="number" name="length" id="length" min="1" max="64">
-            <input type="button" value="Generate password" onclick="RandomPassGen()">
+            <input type="button" class="accept" value="Generate password" onclick="RandomPassGen()">
         </form>
-        <h2 id="pass"></h2>
+        <nobr><h2 nowrap id="pass"></h2></nobr>
         <input id="copy" type="button" value="Copy to clipboard" onclick="CopyPass()">
     </main>
     <script src="index.js"></script>
